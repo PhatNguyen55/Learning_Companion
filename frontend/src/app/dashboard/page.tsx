@@ -1,55 +1,31 @@
-import { AppSidebar } from "@/src/components/main/app-sidebar"
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/src/components/ui/breadcrumb"
-import { Separator } from "@/src/components/ui/separator"
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/src/components/ui/sidebar"
-
-export default function Page() {
+export default function DashboardPage() {
   return (
-    <SidebarProvider>
-      <AppSidebar />
-      <SidebarInset>
-        <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
-          <div className="flex items-center gap-2 px-4">
-            <SidebarTrigger className="-ml-1" />
-            <Separator
-              orientation="vertical"
-              className="mr-2 data-[orientation=vertical]:h-4"
-            />
-            <Breadcrumb>
-              <BreadcrumbList>
-                <BreadcrumbItem className="hidden md:block">
-                  <BreadcrumbLink href="#">
-                    DashBoard
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator className="hidden md:block" />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>Data Fetching</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
-          </div>
-        </header>
-        <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-          <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div className="bg-muted/50 aspect-video rounded-xl" />
-            <div className="bg-muted/50 aspect-video rounded-xl" />
-            <div className="bg-muted/50 aspect-video rounded-xl" />
-          </div>
-          <div className="bg-muted/50 min-h-[100vh] flex-1 rounded-xl md:min-h-min" />
+    <div className="space-y-6">
+      <div className="text-center">
+        <h1 className="text-3xl font-bold">Welcome to Learning Companion</h1>
+        <p className="text-muted-foreground mt-2">Choose a course to start learning</p>
+      </div>
+
+      <div className="grid auto-rows-min gap-4 md:grid-cols-3">
+        <div className="bg-gradient-to-br from-blue-100 to-blue-200 aspect-video rounded-xl p-6 flex items-end">
+          <h3 className="text-xl font-semibold text-blue-900">📚 Vocabulary</h3>
         </div>
-      </SidebarInset>
-    </SidebarProvider>
+        <div className="bg-gradient-to-br from-green-100 to-green-200 aspect-video rounded-xl p-6 flex items-end">
+          <h3 className="text-xl font-semibold text-green-900">✏️ Grammar</h3>
+        </div>
+        <div className="bg-gradient-to-br from-purple-100 to-purple-200 aspect-video rounded-xl p-6 flex items-end">
+          <h3 className="text-xl font-semibold text-purple-900">🎤 Speaking</h3>
+        </div>
+        <div className="bg-gradient-to-br from-purple-100 to-purple-200 aspect-video rounded-xl p-6 flex items-end">
+          <h3 className="text-xl font-semibold text-purple-900">🎤 Listening</h3>
+        </div>
+        <div className="bg-gradient-to-br from-purple-100 to-purple-200 aspect-video rounded-xl p-6 flex items-end">
+          <h3 className="text-xl font-semibold text-purple-900">🎤 Writing</h3>
+        </div>
+        <div className="bg-gradient-to-br from-purple-100 to-purple-200 aspect-video rounded-xl p-6 flex items-end">
+          <h3 className="text-xl font-semibold text-purple-900">🎤 Reading</h3>
+        </div>
+      </div>
+    </div>
   )
 }

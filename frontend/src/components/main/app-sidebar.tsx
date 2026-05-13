@@ -3,13 +3,7 @@ import * as React from "react"
 import {
   AudioWaveform,
   BookOpen,
-  Bot,
-  Command,
-  Frame,
-  GalleryVerticalEnd,
   GraduationCap,
-  Map,
-  PieChart,
   Settings2,
   SquareTerminal,
 } from "lucide-react"
@@ -28,112 +22,83 @@ import {
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    name: "User",
+    email: "user@example.com",
+    avatar: "/avatars/user.jpg",
   },
   navMain: [
     {
-      title: "Playground",
-      url: "#",
-      icon: SquareTerminal,
+      title: "Vocabulary",
+      url: "/dashboard/vocabulary",
+      icon: BookOpen,
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
+          title: "Learn",
+          url: "/dashboard/vocabulary/learn",
         },
         {
-          title: "Starred",
-          url: "#",
+          title: "Review",
+          url: "/dashboard/vocabulary/review",
         },
         {
-          title: "Settings",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Models",
-      url: "#",
-      icon: Bot,
-      items: [
-        {
-          title: "Genesis",
-          url: "#",
-        },
-        {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
-          url: "#",
+          title: "My Words",
+          url: "/dashboard/vocabulary/mywords",
         },
       ],
     },
     {
-      title: "Documentation",
-      url: "#",
-      icon: BookOpen,
+      title: "Grammar",
+      url: "/dashboard/grammar",
+      icon: SquareTerminal,
       items: [
         {
-          title: "Introduction",
-          url: "#",
+          title: "Lessons",
+          url: "/dashboard/grammar/lessons",
         },
         {
-          title: "Get Started",
-          url: "#",
+          title: "Exercises",
+          url: "/dashboard/grammar/exercises",
         },
         {
-          title: "Tutorials",
-          url: "#",
+          title: "Progress",
+          url: "/dashboard/grammar/progress",
+        },
+      ],
+    },
+    {
+      title: "Speaking",
+      url: "/dashboard/speaking",
+      icon: AudioWaveform,
+      items: [
+        {
+          title: "Practice",
+          url: "/dashboard/speaking/practice",
         },
         {
-          title: "Changelog",
-          url: "#",
+          title: "Pronunciation",
+          url: "/dashboard/speaking/pronunciation",
         },
       ],
     },
     {
       title: "Settings",
-      url: "#",
+      url: "/dashboard/settings",
       icon: Settings2,
       items: [
         {
-          title: "General",
-          url: "#",
+          title: "Profile",
+          url: "/dashboard/settings/profile",
         },
         {
-          title: "Team",
-          url: "#",
+          title: "Preferences",
+          url: "/dashboard/settings/preferences",
         },
         {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
+          title: "Account",
+          url: "/dashboard/settings/account",
         },
       ],
-    },
-  ],
-  projects: [
-    {
-      name: "Design Engineering",
-      url: "#",
-      icon: Frame,
-    },
-    {
-      name: "Sales & Marketing",
-      url: "#",
-      icon: PieChart,
-    },
-    {
-      name: "Travel",
-      url: "#",
-      icon: Map,
     },
   ],
 }
