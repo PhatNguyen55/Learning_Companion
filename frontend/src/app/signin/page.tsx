@@ -1,6 +1,6 @@
 import { GalleryVerticalEnd, GraduationCap } from "lucide-react"
 
-import { LoginForm } from "@/src/components/signin/login-form"
+import { LoginForm } from "@/components/signin/login-form"
 
 export default function LoginPage() {
   return (

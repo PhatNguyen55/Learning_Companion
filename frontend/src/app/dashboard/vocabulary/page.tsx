@@ -1,9 +1,9 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { Button } from '@/src/components/ui/button';
-import { Progress } from '@/src/components/ui/progress';
-import { Badge } from '@/src/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/src/components/ui/tabs';
+import { Button } from '@/components/ui/button';
+import { Progress } from '@/components/ui/progress';
+import { Badge } from '@/components/ui/badge';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { 
   ChevronLeft, 
   ChevronRight,
@@ -15,7 +15,7 @@ import {
   Settings,
   GraduationCap
 } from 'lucide-react';
-import { Card, CardContent } from '@/src/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 // import { VocabularyImport } from '@/features/vocabulary/components/VocabularyImport';
 
 const vocabulary = [
